@@ -38,7 +38,7 @@ Or you could use `jpath-query`.  Which turns that
 nested if into this:
 
 ```
-var query = require('jpath-query';
+var query = require('jpath-query');
 console.log(query.jpath('/items/2/kind',data));
 ```
 
