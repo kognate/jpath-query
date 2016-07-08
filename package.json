@@ -1,6 +1,6 @@
 {
   "name": "jpath-query",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Functions to perform simple, xpath style query against a JSON object.",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,6 @@
     "query"
   ],
   "author": "Joshua B. Smith",
+  "url" : "https://github.com/kognate/jpath-query",
   "license": "MIT"
 }

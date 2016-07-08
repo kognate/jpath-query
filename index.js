@@ -1,4 +1,5 @@
-export function query(queryarray, datasource, unlessfound) {
+var Query = {};
+Query.query = function(queryarray, datasource, unlessfound) {
   var result = queryarray.reduce(function(k,v) {
     if (k) {
       return k[v];
@@ -9,6 +10,8 @@ export function query(queryarray, datasource, unlessfound) {
   return result ? result : unlessfound;
 }
 
-export function jpath(querystring, datasource, unlessfound) {
-  return query(querystring.split(/\//).filter(function(item) { return item.length; }),datasource,unlessfound);
+Query.jpath = function(querystring, datasource, unlessfound) {
+  return this.query(querystring.split(/\//).filter(function(item) { return item.length; }),datasource,unlessfound);
 }
+
+module.exports = Query;
